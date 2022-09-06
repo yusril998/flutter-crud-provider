@@ -1,4 +1,4 @@
-import 'package:test_mobile_flutter/model/category_model.dart';
+import 'package:crud_mobile_flutter/model/category_model.dart';
 
 class ProductModel {
   int? id;

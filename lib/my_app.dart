@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:test_mobile_flutter/screen/main_screen/main_screen.dart';
-import 'package:test_mobile_flutter/screen/main_screen/splash_screen.dart';
-import 'package:test_mobile_flutter/state/category_state.dart';
-import 'package:test_mobile_flutter/state/product_state.dart';
-import 'package:test_mobile_flutter/utils/routes.dart';
+import 'package:crud_mobile_flutter/screen/main_screen/main_screen.dart';
+import 'package:crud_mobile_flutter/screen/main_screen/splash_screen.dart';
+import 'package:crud_mobile_flutter/state/category_state.dart';
+import 'package:crud_mobile_flutter/state/product_state.dart';
+import 'package:crud_mobile_flutter/utils/routes.dart';
 
 class MyApp extends StatelessWidget {
   @override

@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "testmobile.com" "\0"
-            VALUE "FileDescription", "test_mobile_flutter" "\0"
+            VALUE "FileDescription", "crud_mobile_flutter" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "test_mobile_flutter" "\0"
+            VALUE "InternalName", "crud_mobile_flutter" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 testmobile.com. All rights reserved." "\0"
-            VALUE "OriginalFilename", "test_mobile_flutter.exe" "\0"
-            VALUE "ProductName", "test_mobile_flutter" "\0"
+            VALUE "OriginalFilename", "crud_mobile_flutter.exe" "\0"
+            VALUE "ProductName", "crud_mobile_flutter" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

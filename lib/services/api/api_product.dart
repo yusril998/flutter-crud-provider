@@ -2,8 +2,8 @@ import 'dart:developer';
 import 'dart:io';
 
 import 'package:dio/dio.dart';
-import 'package:test_mobile_flutter/model/product_model.dart';
-import 'package:test_mobile_flutter/services/api/api.dart';
+import 'package:crud_mobile_flutter/model/product_model.dart';
+import 'package:crud_mobile_flutter/services/api/api.dart';
 
 class ApiProduct extends Api {
   Future<List<ProductModel?>?> getListProduct() async {

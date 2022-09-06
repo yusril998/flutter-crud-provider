@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
-import 'package:test_mobile_flutter/model/category_model.dart';
+import 'package:crud_mobile_flutter/model/category_model.dart';
 
-import 'package:test_mobile_flutter/services/api/api.dart';
+import 'package:crud_mobile_flutter/services/api/api.dart';
 
 class ApiCategory extends Api {
   Future<List<CategoryModel?>?> getListCategory() async {

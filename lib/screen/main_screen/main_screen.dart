@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:test_mobile_flutter/screen/home/home_screen.dart';
-import 'package:test_mobile_flutter/state/category_state.dart';
+import 'package:crud_mobile_flutter/screen/home/home_screen.dart';
+import 'package:crud_mobile_flutter/state/category_state.dart';
 
 class MainScreen extends StatefulWidget {
   static const routeName = '/home';

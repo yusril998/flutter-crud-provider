@@ -1,13 +1,11 @@
-import 'dart:math';
-
+import 'package:crud_mobile_flutter/const/constant.dart';
+import 'package:crud_mobile_flutter/model/category_model.dart';
+import 'package:crud_mobile_flutter/screen/component/product_item.dart';
+import 'package:crud_mobile_flutter/screen/detail_product/form_product_screen.dart';
+import 'package:crud_mobile_flutter/state/category_state.dart';
+import 'package:crud_mobile_flutter/state/product_state.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:test_mobile_flutter/model/category_model.dart';
-import 'package:test_mobile_flutter/screen/component/product_item.dart';
-import 'package:test_mobile_flutter/screen/detail_product/form_product_screen.dart';
-import 'package:test_mobile_flutter/state/category_state.dart';
-import 'package:test_mobile_flutter/state/product_state.dart';
-import 'package:test_mobile_flutter/const/constant.dart';
 
 class DetailKategoriScreen extends StatelessWidget {
   static const routeName = '/detail-kategori';
@@ -31,7 +29,6 @@ class DetailKategoriScreen extends StatelessWidget {
     );
   }
 
-  /** builder method untuk konten secara keseluruhan **/
   Widget _buildContent(BuildContext context) {
     final state = Provider.of<ProductState>(context);
     final stateCategory = Provider.of<CategoryState>(context);

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_mobile_flutter/screen/main_screen/main_screen.dart';
+import 'package:crud_mobile_flutter/screen/main_screen/main_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   static const routeName = '/home';

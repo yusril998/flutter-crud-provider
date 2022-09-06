@@ -2,10 +2,10 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:test_mobile_flutter/model/category_model.dart';
-import 'package:test_mobile_flutter/services/api/api_category.dart';
+import 'package:crud_mobile_flutter/model/category_model.dart';
+import 'package:crud_mobile_flutter/services/api/api_category.dart';
 
-import 'package:test_mobile_flutter/const/constant.dart';
+import 'package:crud_mobile_flutter/const/constant.dart';
 
 class CategoryState extends ChangeNotifier {
   ApiCategory repository = ApiCategory();
