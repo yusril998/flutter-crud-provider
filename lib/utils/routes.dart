@@ -3,9 +3,9 @@ import 'package:test_mobile_flutter/model/category_model.dart';
 import 'package:test_mobile_flutter/model/product_model.dart';
 import 'package:test_mobile_flutter/screen/detail_product/detail_product_screen.dart';
 import 'package:test_mobile_flutter/screen/detail_product/form_product_screen.dart';
-import 'package:test_mobile_flutter/screen/main_screen.dart';
+import 'package:test_mobile_flutter/screen/main_screen/main_screen.dart';
 import 'package:test_mobile_flutter/screen/search/search_screen.dart';
-import 'package:test_mobile_flutter/screen/splash_screen.dart';
+import 'package:test_mobile_flutter/screen/main_screen/splash_screen.dart';
 
 Route? generatesRoutes(RouteSettings settings) {
   final args = settings.arguments;

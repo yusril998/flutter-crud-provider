@@ -5,35 +5,15 @@ import 'package:provider/provider.dart';
 import 'package:test_mobile_flutter/model/category_model.dart';
 import 'package:test_mobile_flutter/screen/component/product_item.dart';
 import 'package:test_mobile_flutter/screen/detail_product/form_product_screen.dart';
+import 'package:test_mobile_flutter/state/category_state.dart';
 import 'package:test_mobile_flutter/state/product_state.dart';
 import 'package:test_mobile_flutter/const/constant.dart';
 
-class DetailKategoriScreen extends StatefulWidget {
+class DetailKategoriScreen extends StatelessWidget {
   static const routeName = '/detail-kategori';
   final CategoryModel? model;
 
   const DetailKategoriScreen({this.model});
-  @override
-  _DetailKategoriScreenState createState() => _DetailKategoriScreenState();
-}
-
-class _DetailKategoriScreenState extends State<DetailKategoriScreen> {
-  TextEditingController searchVal = TextEditingController();
-  String bg = Constant.listBackGround.first;
-
-  @override
-  void initState() {
-    setState(() {
-      Random rnd;
-      int min = 1;
-      int max = 10;
-      rnd = new Random();
-      var r = min + rnd.nextInt(max - min);
-      print("$r is in the range of $min and $max");
-      bg = 'assets/img/${r}.png';
-    });
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +22,7 @@ class _DetailKategoriScreenState extends State<DetailKategoriScreen> {
         backgroundColor: Colors.greenAccent,
         onPressed: () {
           Navigator.of(context)
-              .pushNamed(FormProductScreen.routeName, arguments: widget.model!);
+              .pushNamed(FormProductScreen.routeName, arguments: model!);
         },
         child: Icon(Icons.add),
       ),
@@ -54,8 +34,9 @@ class _DetailKategoriScreenState extends State<DetailKategoriScreen> {
   /** builder method untuk konten secara keseluruhan **/
   Widget _buildContent(BuildContext context) {
     final state = Provider.of<ProductState>(context);
+    final stateCategory = Provider.of<CategoryState>(context);
     final items = state.productList!
-        .where((element) => element!.categoryId == widget.model!.id.toString());
+        .where((element) => element!.categoryId == model!.id.toString());
 
     return SingleChildScrollView(
       scrollDirection: Axis.vertical,
@@ -65,7 +46,7 @@ class _DetailKategoriScreenState extends State<DetailKategoriScreen> {
           Stack(
             children: [
               Image.asset(
-                bg,
+                stateCategory.background,
                 height: 300,
                 width: double.infinity,
                 fit: BoxFit.cover,
@@ -92,7 +73,7 @@ class _DetailKategoriScreenState extends State<DetailKategoriScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      widget.model!.name!,
+                      model!.name!,
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 17,

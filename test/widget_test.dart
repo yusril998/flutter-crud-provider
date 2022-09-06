@@ -7,8 +7,6 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:test_mobile_flutter/main.dart';
-
 void main() {
   // testWidgets('Counter increments smoke test', (WidgetTester tester) async {
   //   // Build our app and trigger a frame.

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_mobile_flutter/screen/main_screen.dart';
+import 'package:test_mobile_flutter/screen/main_screen/main_screen.dart';
 import 'package:test_mobile_flutter/screen/search/search_screen.dart';
 
 class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {

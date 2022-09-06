@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 ///Template bottom sheet yang dipakai di dalam aplikasi
-class DzikraBottomSheet extends StatelessWidget {
+class DefaultBottomSheet extends StatelessWidget {
   ///Menampung daftar widget yang ditampilkan di dalam bottom sheet
   final List<Widget> widgets;
   final bool isScrollView;
 
-  DzikraBottomSheet({required this.widgets, this.isScrollView = false});
+  DefaultBottomSheet({required this.widgets, this.isScrollView = false});
 
   @override
   Widget build(BuildContext context) {

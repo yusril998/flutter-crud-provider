@@ -8,7 +8,7 @@
 .buildlog/
 .history
 .svn/
-.vscode/
+#.vscode/
 
 # IntelliJ related
 *.iml
@@ -32,6 +32,7 @@ pubspec.lock
 .pub-cache/
 .pub/
 /build/
+.build/
 .pubspec.lock
 
 # Web related
@@ -42,3 +43,7 @@ app.*.symbols
 
 # Obfuscation related
 app.*.map.json
+build/app/outputs/flutter-apk/app.apk
+build/app/outputs/flutter-apk/app.apk.sha1
+build/app/outputs/flutter-apk/app.apk
+build/app/outputs/flutter-apk/app.apk.sha1

@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:test_mobile_flutter/screen/component/ui_bottomsheet.dart';
+import 'package:test_mobile_flutter/screen/component/default_bottomsheet.dart';
 
 showModalChooseImage(BuildContext context,
     {required Function(File) onCallback}) {
@@ -13,7 +13,7 @@ showModalChooseImage(BuildContext context,
         borderRadius: BorderRadius.circular(24),
       ),
       builder: (BuildContext pickerContext) {
-        return DzikraBottomSheet(widgets: [
+        return DefaultBottomSheet(widgets: [
           /// feedback card
 
           /// ratings

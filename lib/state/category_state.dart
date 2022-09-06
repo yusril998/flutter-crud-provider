@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:test_mobile_flutter/model/category_model.dart';
@@ -10,16 +11,29 @@ class CategoryState extends ChangeNotifier {
   ApiCategory repository = ApiCategory();
 
   int _page = 1;
+  String _background = Constant.listBackGround.first;
   int get page => _page;
 
   bool _isLoadMore = true;
   bool get isLoadMore => _isLoadMore;
+  String get background => _background;
 
   List<CategoryModel?>? _categoryList = [];
   List<CategoryModel?>? get categoryList => _categoryList;
 
   bool _isBusy = false;
   bool get isBusy => _isBusy;
+
+  void getBackground() {
+    Random rnd;
+    int min = 1;
+    int max = 10;
+    rnd = new Random();
+    var r = min + rnd.nextInt(max - min);
+    print("$r is in the range of $min and $max");
+    _background = 'assets/img/${r}.png';
+    notifyListeners();
+  }
 
   Future<void> getListCategory() async {
     try {

@@ -7,22 +7,11 @@ import 'package:test_mobile_flutter/screen/component/product_other.dart';
 import 'package:test_mobile_flutter/state/product_state.dart';
 import 'package:test_mobile_flutter/const/constant.dart';
 
-class SearchScreen extends StatefulWidget {
+class SearchScreen extends StatelessWidget {
   static const routeName = '/search';
   final String? query;
 
   const SearchScreen({required this.query});
-  @override
-  _SearchScreenState createState() => _SearchScreenState();
-}
-
-class _SearchScreenState extends State<SearchScreen> {
-  @override
-  void initState() {
-    super.initState();
-  }
-
-  /** Fungsi untuk menampilkan modal dari menu ellipsis **/
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +24,7 @@ class _SearchScreenState extends State<SearchScreen> {
     );
   }
 
-  Widget _buildSearchedVid(String query) {
+  Widget _buildSearchedVid(BuildContext context, String query) {
     final state = Provider.of<ProductState>(context);
     final List<ProductModel?> items = state.productList!
         .where((element) =>
@@ -88,7 +77,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   fontWeight: FontWeight.w700),
             ),
           ),
-          _buildSearchedVid(query),
+          _buildSearchedVid(context, query),
           SizedBox(
             height: 20,
           ),

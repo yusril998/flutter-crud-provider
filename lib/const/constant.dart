@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 class Constant {
   static int limit = 10;
+  static String BASE_URL_DEV = "https://dev.svc.dzikra.apps360.id/api/";
+
+  static String BASE_URL_PROD = "https://svc.dzikra.apps360.id/api/";
+
   static Color primary = Colors.green;
   static Color background = Color(0xffF5F5F3);
   static Gradient gradient =

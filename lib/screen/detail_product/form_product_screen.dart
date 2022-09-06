@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:another_flushbar/flushbar.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:test_mobile_flutter/model/category_model.dart';
 import 'package:test_mobile_flutter/model/product_model.dart';

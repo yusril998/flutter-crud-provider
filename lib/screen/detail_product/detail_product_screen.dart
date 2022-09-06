@@ -7,25 +7,15 @@ import 'package:test_mobile_flutter/screen/component/product_other.dart';
 import 'package:test_mobile_flutter/state/product_state.dart';
 import 'package:test_mobile_flutter/const/constant.dart';
 
-class DetailProductScreen extends StatefulWidget {
+class DetailProductScreen extends StatelessWidget {
   static const routeName = '/detail-video';
   final ProductModel? model;
 
   const DetailProductScreen({required this.model});
 
   @override
-  _DetailProductScreenState createState() => _DetailProductScreenState();
-}
-
-class _DetailProductScreenState extends State<DetailProductScreen> {
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    final selectedVideo = widget.model;
+    final selectedVideo = model;
 
     return Scaffold(
       backgroundColor: const Color(0xFFF5F5F5),
@@ -39,7 +29,7 @@ class _DetailProductScreenState extends State<DetailProductScreen> {
   /** builder method untuk konten secara keseluruhan **/
   Widget _buildContent(BuildContext context) {
     final state = Provider.of<ProductState>(context, listen: true);
-    final selectedVideo = widget.model!;
+    final selectedVideo = model!;
     DateFormat outputFormat = DateFormat("MMMM yyyy");
 
     String tanggal =
@@ -164,10 +154,5 @@ class _DetailProductScreenState extends State<DetailProductScreen> {
         ],
       ),
     );
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
   }
 }
