@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:test_mobile_flutter/screen/component/product_other.dart';
 import 'package:test_mobile_flutter/state/product_state.dart';
-import 'package:test_mobile_flutter/utils/constant.dart';
+import 'package:test_mobile_flutter/const/constant.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class HalamanUtama extends StatefulWidget {

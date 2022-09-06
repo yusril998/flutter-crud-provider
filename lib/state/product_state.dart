@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:test_mobile_flutter/model/product_model.dart';
 import 'package:test_mobile_flutter/services/api/api_product.dart';
-import 'package:test_mobile_flutter/utils/constant.dart';
+import 'package:test_mobile_flutter/const/constant.dart';
 
 class ProductState extends ChangeNotifier {
   ApiProduct repository = ApiProduct();

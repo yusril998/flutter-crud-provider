@@ -5,7 +5,7 @@ import 'package:test_mobile_flutter/model/product_model.dart';
 import 'package:test_mobile_flutter/screen/component/general_appbar.dart';
 import 'package:test_mobile_flutter/screen/component/product_other.dart';
 import 'package:test_mobile_flutter/state/product_state.dart';
-import 'package:test_mobile_flutter/utils/constant.dart';
+import 'package:test_mobile_flutter/const/constant.dart';
 
 class DetailProductScreen extends StatefulWidget {
   static const routeName = '/detail-video';

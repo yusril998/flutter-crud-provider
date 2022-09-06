@@ -4,7 +4,7 @@ import 'package:test_mobile_flutter/screen/component/custom_appbar.dart';
 import 'package:test_mobile_flutter/screen/detail_kategori/detail_kategori_screen.dart';
 import 'package:test_mobile_flutter/screen/home/halaman_utama.dart';
 import 'package:test_mobile_flutter/state/category_state.dart';
-import 'package:test_mobile_flutter/utils/constant.dart';
+import 'package:test_mobile_flutter/const/constant.dart';
 
 class HomeScreen extends StatefulWidget {
   static const routeName = '/home';

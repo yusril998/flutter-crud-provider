@@ -5,7 +5,7 @@ import 'package:test_mobile_flutter/screen/component/general_appbar.dart';
 import 'package:test_mobile_flutter/screen/component/product_item.dart';
 import 'package:test_mobile_flutter/screen/component/product_other.dart';
 import 'package:test_mobile_flutter/state/product_state.dart';
-import 'package:test_mobile_flutter/utils/constant.dart';
+import 'package:test_mobile_flutter/const/constant.dart';
 
 class SearchScreen extends StatefulWidget {
   static const routeName = '/search';

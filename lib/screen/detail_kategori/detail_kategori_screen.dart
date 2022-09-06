@@ -6,7 +6,7 @@ import 'package:test_mobile_flutter/model/category_model.dart';
 import 'package:test_mobile_flutter/screen/component/product_item.dart';
 import 'package:test_mobile_flutter/screen/detail_product/form_product_screen.dart';
 import 'package:test_mobile_flutter/state/product_state.dart';
-import 'package:test_mobile_flutter/utils/constant.dart';
+import 'package:test_mobile_flutter/const/constant.dart';
 
 class DetailKategoriScreen extends StatefulWidget {
   static const routeName = '/detail-kategori';

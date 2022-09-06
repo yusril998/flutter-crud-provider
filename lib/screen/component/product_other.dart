@@ -7,7 +7,7 @@ import 'package:test_mobile_flutter/screen/component/loading.dart';
 import 'package:test_mobile_flutter/screen/detail_product/detail_product_screen.dart';
 import 'package:test_mobile_flutter/screen/detail_product/form_product_screen.dart';
 import 'package:test_mobile_flutter/state/product_state.dart';
-import 'package:test_mobile_flutter/utils/constant.dart';
+import 'package:test_mobile_flutter/const/constant.dart';
 
 class ProductOther extends StatelessWidget {
   final ProductModel? model;
