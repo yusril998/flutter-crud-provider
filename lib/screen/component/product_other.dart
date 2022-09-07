@@ -2,7 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:crud_mobile_flutter/model/product_model.dart';
+import 'package:crud_mobile_flutter/model/product/product_model.dart';
 import 'package:crud_mobile_flutter/screen/component/loading.dart';
 import 'package:crud_mobile_flutter/screen/detail_product/detail_product_screen.dart';
 import 'package:crud_mobile_flutter/screen/detail_product/form_product_screen.dart';

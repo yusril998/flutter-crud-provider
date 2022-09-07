@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:crud_mobile_flutter/model/category_model.dart';
-import 'package:crud_mobile_flutter/model/product_model.dart';
+import 'package:crud_mobile_flutter/model/product/product_model.dart';
 import 'package:crud_mobile_flutter/screen/detail_product/detail_product_screen.dart';
 import 'package:crud_mobile_flutter/screen/detail_product/form_product_screen.dart';
 import 'package:crud_mobile_flutter/screen/main_screen/main_screen.dart';

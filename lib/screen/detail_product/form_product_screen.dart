@@ -4,7 +4,7 @@ import 'package:another_flushbar/flushbar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:crud_mobile_flutter/model/category_model.dart';
-import 'package:crud_mobile_flutter/model/product_model.dart';
+import 'package:crud_mobile_flutter/model/product/product_model.dart';
 import 'package:crud_mobile_flutter/screen/component/form_widget.dart';
 import 'package:crud_mobile_flutter/screen/component/general_appbar.dart';
 import 'package:crud_mobile_flutter/screen/component/loading.dart';

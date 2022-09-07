@@ -2,7 +2,7 @@ import 'dart:developer';
 import 'dart:io';
 
 import 'package:dio/dio.dart';
-import 'package:crud_mobile_flutter/model/product_model.dart';
+import 'package:crud_mobile_flutter/model/product/product_model.dart';
 import 'package:crud_mobile_flutter/services/api/api.dart';
 
 class ApiProduct extends Api {

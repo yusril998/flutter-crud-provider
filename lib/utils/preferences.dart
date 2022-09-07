@@ -10,6 +10,7 @@ class Preferences {
     await box.put(HIVE_AUTH, data);
   }
 
+  getData() {}
   static Future<String?> getUid() async {
     var box = await Hive.openBox(HIVE_BOX);
     return box.get(HIVE_AUTH);
