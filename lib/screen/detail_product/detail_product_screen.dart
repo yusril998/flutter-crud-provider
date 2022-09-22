@@ -1,11 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-import 'package:provider/provider.dart';
+import 'package:crud_mobile_flutter/const/constant.dart';
 import 'package:crud_mobile_flutter/model/product/product_model.dart';
 import 'package:crud_mobile_flutter/screen/component/general_appbar.dart';
 import 'package:crud_mobile_flutter/screen/component/product_other.dart';
 import 'package:crud_mobile_flutter/state/product_state.dart';
-import 'package:crud_mobile_flutter/const/constant.dart';
+import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import 'package:provider/provider.dart';
 
 class DetailProductScreen extends StatelessWidget {
   static const routeName = '/detail-video';

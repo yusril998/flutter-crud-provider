@@ -27,19 +27,4 @@ class GeneralAppbar extends StatelessWidget implements PreferredSizeWidget {
   }
 }
 
-//  AppBar(
-//             leading: SizedBox(),
-//             leadingWidth: 0,
-//             iconTheme: const IconThemeData(color: Color(0xFF3E3E3E)),
-//             backgroundColor: const Color(0xFFF5F5F5),
-//             centerTitle: true,
-//             toolbarHeight: 80,
-//             elevation: 0,
-//             title: Text(
-//               title!,
-//               style: TextStyle(
-//                 color: Color(0xFF3E3E3E),
-//                 fontWeight: FontWeight.bold,
-//               ),
-//             ),
-//           )
+
